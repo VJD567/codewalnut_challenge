@@ -37,7 +37,7 @@ export const validateTimerForm = (data: TimerFormData): boolean => {
     return false;
   }
 
-  if (totalSeconds > 86400) { // 24 hours
+  if (totalSeconds > 86400) { 
     toast.error('Timer cannot exceed 24 hours');
     return false;
   }
